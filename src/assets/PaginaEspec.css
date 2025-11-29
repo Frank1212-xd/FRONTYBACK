@@ -1,0 +1,9 @@
+.botonnegro {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-flex;
+  gap: 10px;
+}

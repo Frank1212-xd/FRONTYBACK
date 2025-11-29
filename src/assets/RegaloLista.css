@@ -1,0 +1,113 @@
+.giftlist {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.giftlist-title {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.giftlist-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.giftcard {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.giftcard:focus {
+  border-color: #cfcfcf;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+}
+
+.giftcard.selected {
+  border-color: #6ca0ff;
+  background: rgba(108,160,255,0.06);
+}
+
+.giftcard-media {
+  width: 56px;
+  height: 40px;
+  flex: 0 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-placeholder {
+  width: 44px;
+  height: 28px;
+  background: #eee;
+  border-radius: 4px;
+}
+.giftcard-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.gift-name {
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.gift-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #555;
+}
+
+.gift-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  align-self: flex-end;
+}
+
+.gift-select,
+.gift-send {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.gift-send[disabled],
+.gift-send[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 420px) {
+  .giftlist-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .giftcard {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .gift-actions {
+    justify-content: space-between;
+  }
+}
