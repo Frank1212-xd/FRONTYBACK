@@ -33,6 +33,8 @@
   max-width: 100%;
   margin-top: 10px;
   border-radius: 4px;
+  display: block;
+  margin: 10px auto;
 }
 
 .modal-footer {
@@ -51,4 +53,34 @@
 
 .modal-btn:hover {
   background-color: #0056b3;
+}
+
+.boton {
+  display: block;       
+  margin: 20px auto;   
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #0056b3; 
+}
+
+.boton-abrir-terminos {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer; 
+  border: 1px solid #ccc; 
+  color: black;
+}
+
+.boton-abrir-terminos:hover {
+  background-color: #f0f0f0;
 }

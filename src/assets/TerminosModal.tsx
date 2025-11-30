@@ -14,7 +14,9 @@ import { useNavigate } from   'react-router-dom';
 	  return (
 	    <>
 	      <footer className="text-center vh-100 d-flex flex-column justify-content-center align-items-center">
-          <button style={{ backgroundColor: "white", padding: "10px 20px", borderRadius: "5px", textDecoration: "none", gap: "10px", marginTop: "20px", textAlign: 'center', alignContent: 'center'}} onClick={abrirModal}>Terminos y Condiciones</button>
+          <button  className='boton-abrir-terminos' onClick={abrirModal}>
+			Terminos y Condiciones
+		  </button>
          {mostrarModal && (
 	        <div className="modal">	          
           <div className="modal-contenido">
